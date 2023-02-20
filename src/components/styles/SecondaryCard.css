@@ -1,0 +1,83 @@
+.secondaryCard {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.Work {
+  background-color: var(--Light-red1);
+}
+
+.Play {
+  background-color: var(--Soft-blue);
+}
+
+.Study {
+  background-color: var(--Light-red2);
+}
+
+.Exercise {
+  background-color: var(--Lime-green);
+}
+
+.Social {
+  background-color: var(--Violet);
+}
+
+.Self.Care {
+  background-color: var(--Soft-orange);
+}
+
+.secondaryCard__img {
+  display: block;
+  width: 65px;
+  position: absolute;
+  right: 10px;
+}
+
+.secondaryCard__contain {
+  background-color: var(--Dark-blue);
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 40px;
+  position: relative;
+}
+
+@media (min-width: 1440px) {
+  .secondaryCard__contain {
+    height: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+}
+
+.secondaryCard__header, .secondaryCard__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.secondaryCard__info {
+  margin-top: 10px;
+}
+
+@media (min-width: 1440px) {
+  .secondaryCard__info {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .secondaryCard__hours  {
+    font-size: 60px;
+    font-weight: lighter;
+  }
+}
+
+.secondaryCard__hours {
+  font-weight: 300;
+}
